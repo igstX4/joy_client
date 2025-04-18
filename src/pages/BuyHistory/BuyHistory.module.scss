@@ -1,0 +1,35 @@
+.history {
+    padding: 16px;
+    h1 {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+    h2 {
+        font-size: 19px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        color: var(--primary-color);
+    }
+    h3 {
+        color: var(--primary-color);
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        span {
+            color: var(--secondary-color);
+        }
+    }
+}
+.historyItem {
+    margin-top: 20px;
+    .localItems {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.orderNumber {
+    color: var(--primary-color);
+}

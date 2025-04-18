@@ -1,0 +1,37 @@
+.donateItem {
+    width: calc(50% - 8px);
+    margin-top: 0;
+
+    img {
+        border-radius: 15px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    h3 {
+        margin-top: 4px;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--primary-color);
+    }
+    .priceContainer {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        margin-top: 3px;
+        .current_price {
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--primary-color);
+        }
+        .oldPrice {
+            color: var(--secondary-color);
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: line-through;
+        }
+    }
+}

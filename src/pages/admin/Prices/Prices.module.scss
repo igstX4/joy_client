@@ -1,0 +1,132 @@
+.pricesContainer {
+    max-width: 1200px;
+    // margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 100%; // добавлено
+    // overflow-y: auto; // добавлено
+  }
+  
+  .tabs {
+    display: flex;
+    // gap: 10px;
+    border: 1px solid #F4F4F4;
+    border-radius: 7px;
+    margin-bottom: 20px;
+  }
+  
+  .tabButton {
+    padding: 7px 20px;
+    border: 0;
+    transition: .2s;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+  
+    &:hover {
+      background: #f5f5f5;
+    }
+  }
+  
+  .activeTab {
+    background: #fff;
+    border: 1px solid #ff8c00;
+    color: #ff8c00;
+  }
+  
+  .content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh; // добавлено
+    // overflow-y: auto; // добавлено
+  }
+  
+  .title {
+    font-size: 2.5em;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .planSection {
+    margin-bottom: 40px;
+  }
+  
+  .planTitle {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .planItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .planDuration {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #666;
+  }
+  
+  .discountInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .saveButton {
+    padding: 10px 20px;
+    background: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  
+    &:hover {
+      background: #e67e00;
+    }
+  }
+
+  .countrySection {
+    margin-bottom: 60px;
+    display: block; // добавлено
+    width: 100%; // добавлено
+    
+    &:last-child {
+      margin-bottom: 40px; // изменено с 0 на 40px
+    }
+  }
+  
+  .markupContent,
+  .subscriptionContent,
+  .discountContent {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 1.8em;
+    }
+  }
+  .contentWrapper {
+    width: 100%;
+    padding: 0 30px;
+    gap: 40px;
+    justify-content: space-between;
+    display: flex;
+  }

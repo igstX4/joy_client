@@ -1,0 +1,52 @@
+/* Стили для иконок */
+
+/* Переопределение цвета обычных SVG */
+svg path {
+  stroke: var(--icon-color);
+}
+
+/* Переопределение цветов для иконок в элементах формы */
+.inputDiv svg path {
+  stroke: var(--secondary-color);
+}
+
+.inputDiv:focus-within svg path {
+  stroke: #F09004;
+}
+
+/* Переопределение иконок в Cart */
+.btns .trash svg path {
+  stroke: var(--icon-color);
+}
+
+.btns .addToCart svg path {
+  stroke: white;
+}
+
+/* Переопределение иконок в инфоблоках */
+.infoBlock .imgDiv svg path,
+.profile .infoBlocks .imgDiv svg path {
+  stroke: #F09004;
+}
+
+/* Иконки в PlatformChoose */
+.PlatformChoose .btns .item svg path {
+  fill: var(--secondary-color);
+}
+
+.PlatformChoose .btns .active svg path {
+  fill: #F09004 !important;
+}
+
+/* Общие классы для разных типов иконок */
+.icon-primary svg path {
+  stroke: var(--primary-color);
+}
+
+.icon-secondary svg path {
+  stroke: var(--secondary-color);
+}
+
+.icon-accent svg path {
+  stroke: #F09004;
+} 

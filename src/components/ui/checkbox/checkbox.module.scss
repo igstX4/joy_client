@@ -1,0 +1,51 @@
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .checkboxInput {
+    display: none;
+  }
+  
+  .customCheckbox {
+    width: 16px;
+    height: 16px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    position: relative;
+    svg {
+        transition: .2s;
+        opacity: 0;
+    }
+  }
+  
+  .checkboxInput:checked + .customCheckbox {
+    // background-color: #007bff;
+    svg {
+        opacity: 1;
+    }
+    border-color: #FF7E32;
+  }
+  
+//   .checkboxInput:checked + .customCheckbox::after {
+//     content: '';
+//     position: absolute;
+//     left: 4px;
+//     top: 1px;
+//     width: 5px;
+//     height: 10px;
+//     border: solid #FF7E32;
+//     border-width: 0 2px 2px 0;
+//     transform: rotate(45deg);
+//   }
+  
+  .checkboxLabel {
+    margin-left: 8px;
+  }

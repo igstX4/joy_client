@@ -1,0 +1,87 @@
+.catalog {
+    padding: 15px 16px;
+    .searchDiv {
+        // margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        .inputDiv {
+            width: 100%;
+        }
+        .filterBtn {
+            min-width: 46px;
+            height: 40px;
+            cursor: pointer;
+            transition: .2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+            border-radius: 17px;
+            background: linear-gradient(180deg, #F09004 0%, #DF6715 100%);
+        }
+        .filled {
+            background: var(--card-bg);
+            border: 1px solid #DF6715;
+            svg {
+                path {
+                    stroke: #DF6715;
+                }
+            }
+        }
+    }
+    .selects {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    .checkboxdiv {
+        display: flex;
+        margin-top: 7px;
+        gap: 4px;
+        align-items: center;
+        p {
+            font-size: 14px;
+            color: var(--primary-color);
+            font-weight: 400;
+        }
+    }
+    .content {
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        overflow: hidden;
+        max-height: 1000px; // Adjust based on content height
+        opacity: 1;
+        margin-bottom: 20px;
+        background-color: var(--background-color);
+    }
+    .hidden {
+        max-height: 0;
+        opacity: 0;
+        margin-bottom: 0;
+    }
+    .visible {
+        max-height: 1000px; // Adjust based on content height
+        opacity: 1;
+    }
+}
+.margin {
+    // padding: 0 4px;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    padding: 0 4px;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}

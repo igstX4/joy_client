@@ -1,0 +1,13 @@
+.navbar {
+  // ...existing code...
+}
+
+.navbar a {
+  // ...existing code...
+}
+
+.active {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: underline;
+}

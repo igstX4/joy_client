@@ -1,0 +1,63 @@
+.DLCItem {
+    margin-top: 15px;
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    .localTitle {
+        color: #050505;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .item {
+        width: 100%;
+        padding: 12px;
+        border-radius: 15px;
+        background-color: #F7F7F7;
+        display: flex;
+        gap: 10px;
+        img {
+            width: auto;
+            height: 100%;
+        }
+        align-items: center;
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            .name {
+                color: #050505;
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .priceDiv {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                .current_price {
+                    color: #050505;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    gap: 2px;
+                    font-size: 10px;
+                }
+                .old_price {
+                    color: #A8A8A8;
+                    font-size: 8px;
+                    font-weight: 500;
+                }
+            }
+            .platform {
+                font-size: 8px;
+                color: #A8A8A8;
+                font-weight: 500;
+            }
+        }
+    }
+}

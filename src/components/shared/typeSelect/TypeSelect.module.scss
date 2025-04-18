@@ -1,0 +1,20 @@
+.typeSelect {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    position: relative;
+    .line {
+        background-color: var(--border-color);
+        position: absolute;
+        top: 50%;
+        z-index: -1;
+        height: 1px;
+        width: 100%;
+    }
+    .white {
+        background-color: var(--background-color);
+        padding: 5px;
+    }
+}

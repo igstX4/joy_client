@@ -1,0 +1,44 @@
+.buttonWrapper {
+    width: 100%;
+
+    position: relative;
+    .icon {
+        position: absolute;
+        left: -10px;
+        top: -10px;
+    }
+}
+.button {
+    width: 100%;
+    height: 38px;
+    padding: 0 14px;
+    border: 0;
+    border-radius: 9px;
+    background: linear-gradient(180deg, #F09004 0%, #DF6715 100%);
+    color: #FFFFFF;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled) {
+        // transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(240, 144, 4, 0.2);
+    }
+}
+.empty {
+    border: 1px solid #F09004;
+    color: #F09004;
+    background: transparent !important;
+    
+    &:hover:not(:disabled) {
+        background: rgba(240, 144, 4, 0.1) !important;
+    }
+}

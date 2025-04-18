@@ -1,0 +1,51 @@
+.priceFilter {
+    display: flex;
+    padding: 0 16px;
+    margin-top: 20px;
+    flex-direction: column;
+    .title {
+        h3 {
+            cursor: pointer;
+            user-select: none;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 18px;
+            font-weight: 500;
+            svg {
+                transition: .3s;
+                transform: rotateZ(90deg);
+                path {
+                    fill: var(--primary-color);
+                }
+            }
+        }
+    }
+    .inputs {
+        display: flex;
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+        height: 0px;
+        transition: .3s;
+        overflow-y: hidden;
+        input {
+            outline: none;
+            padding: 5px 10px;
+            width: 100px;
+            height: 30px;
+            border-radius: 7px;
+            border: 1px solid var(--border-color);
+            background-color: var(--input-bg);
+            color: var(--text-color);
+    }}
+    .textActive {
+        svg {
+            transform: rotateZ(-90deg) !important;
+        }
+    }
+    .active {
+        height: 30px !important;
+    }
+}

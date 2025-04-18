@@ -1,0 +1,50 @@
+.subscription {
+    margin-bottom: 20px;
+    
+    .items {
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        padding: 10px 0;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .item {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            cursor: pointer;
+            
+            img {
+                min-width: 105px;
+                height: 155px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+            
+            .price {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                
+                .current {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: var(--primary-color);
+                }
+                
+                .old {
+                    font-size: 12px;
+                    color: var(--secondary-color);
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}

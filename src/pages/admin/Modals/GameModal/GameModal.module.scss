@@ -1,0 +1,150 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    animation: modalAppear 0.2s ease;
+  
+    h2 {
+      font-size: 20px;
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+  }
+  
+  .field {
+    margin-bottom: 12px;
+    position: relative;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+  
+    &:focus {
+      outline: none;
+      border-color: #ff8c00;
+    }
+  
+    &::placeholder {
+      color: #9ca3af;
+    }
+  }
+  
+  .searchResults {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 4px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: #ddd;
+      border-radius: 4px;
+  
+      &:hover {
+        background: #ccc;
+      }
+    }
+  }
+  
+  .searchItem {
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 14px;
+  
+    &:hover {
+      background-color: #f9fafb;
+    }
+  
+    &.selected {
+      background-color: #f3f4f6;
+    }
+  }
+  
+  .noResults {
+    padding: 12px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+  }
+  
+  .submitButton,
+  .cancelButton {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    flex: 1;
+  
+    &:hover:not(:disabled) {
+      opacity: 0.9;
+    }
+  
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+  
+  .submitButton {
+    background: #ff8c00;
+    color: white;
+    border: none;
+  }
+  
+  .cancelButton {
+    background: #f3f4f6;
+    color: #374151;
+    border: none;
+  }
+  
+  @keyframes modalAppear {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

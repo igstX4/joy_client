@@ -1,0 +1,13 @@
+.discountTag {
+    background: linear-gradient(360deg, #FF7E32 0%, #FFBF99 42.5%, #FFFFFF 100%),
+linear-gradient(270deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 126, 50, 0.118) 48.5%);
+    height: 14px;
+    padding: 0 4px;
+    font-size: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #050505;
+}

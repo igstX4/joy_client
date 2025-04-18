@@ -1,0 +1,57 @@
+@import '/src/styles/theme.scss';
+@import '/src/styles/icons.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400; /* Regular */
+}
+body, html {
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Плавные переходы при смене темы */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Глобальные стили для полей ввода */
+input, textarea, select {
+  color: var(--text-color);
+  background-color: transparent;
+}
+
+/* Глобальные стили для плейсхолдеров */
+::placeholder {
+  color: var(--input-placeholder);
+}
+
+/* Глобальные стили для админ панели */
+.modal {
+  background-color: var(--card-bg) !important;
+}
+
+.modal h2, .modal h3 {
+  color: var(--primary-color) !important;
+}
+
+.field label, .field span {
+  color: var(--secondary-color) !important;
+}
+
+.field input, .field select, .field textarea {
+  background-color: var(--input-bg) !important;
+  color: var(--text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Стили для админ-кнопок */
+.cancelButton {
+  background-color: var(--card-hover) !important;
+  color: var(--text-color) !important;
+}

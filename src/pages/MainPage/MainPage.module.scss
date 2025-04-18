@@ -1,0 +1,67 @@
+.main {
+    position: relative;
+    min-height: 100vh;
+    background: var(--background-color);
+    width: 100vw;
+    padding: 15px 16px;
+}
+
+.searchDiv {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    .inputDiv {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.content {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    opacity: 1;
+    transform: translateY(0);
+    
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+    }
+    
+    &.hidden {
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.hidden {
+    max-height: 0;
+    opacity: 0;
+}
+
+.visible {
+    // max-height: 1000px; // Adjust based on content height
+    opacity: 1;
+}
+
+.catalogItems {
+    position: relative;
+    width: 100%;
+    background: var(--background-color);
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    padding: 0 4px;
+}

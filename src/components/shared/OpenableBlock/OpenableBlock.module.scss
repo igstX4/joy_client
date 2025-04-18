@@ -1,0 +1,53 @@
+.openableBlock {
+  // ...existing code...
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  span {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 500;
+
+  }
+  // ...existing code...
+}
+
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  svg {
+    path {
+        fill: var(--primary-color);
+    }
+  }
+}
+
+.arrowUp {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.arrowDown {
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: var(--background-color);
+}
+
+.open {
+  max-height: 1000px; /* Adjust as needed */
+}
+
+.closed {
+  max-height: 0;
+}

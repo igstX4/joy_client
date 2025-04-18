@@ -1,0 +1,118 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    max-width: 480px;
+    animation: modalAppear 0.2s ease;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+  
+  .field {
+    margin-bottom: 20px;
+  
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #666;
+      font-size: 14px;
+    }
+  
+    input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      font-size: 14px;
+  
+      &:focus {
+        outline: none;
+        border-color: #ff6b2b;
+      }
+  
+      &[type="file"] {
+        padding: 6px;
+        border: 1px dashed #e5e7eb;
+        background: #f9fafb;
+  
+        &::-webkit-file-upload-button {
+          visibility: hidden;
+          display: none;
+        }
+  
+        &::before {
+          content: 'Выберите файл';
+          display: inline-block;
+          padding: 4px 12px;
+          border-radius: 4px;
+          background: #fff;
+          border: 1px solid #e5e7eb;
+          margin-right: 8px;
+          color: #666;
+        }
+      }
+    }
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+  }
+  
+  .submitButton,
+  .cancelButton {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    flex: 1;
+  
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  
+  .submitButton {
+    background: #ff6b2b;
+    color: white;
+    border: none;
+  }
+  
+  .cancelButton {
+    background: #f3f4f6;
+    color: #374151;
+    border: none;
+  }
+  
+  @keyframes modalAppear {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

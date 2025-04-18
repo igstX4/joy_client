@@ -1,0 +1,73 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+        width: 415px;
+        height: 275px;
+        border: 1px solid #F4F4F4;
+        padding: 25px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0px 4px 16.6px 0px #00000040;
+        h2 {
+            color: #050505;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .inputs {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            gap: 10px;
+            .inputDiv {
+                width: 100%;
+                label {
+                    color: #ABABB0;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-top: 4px;
+                }
+                input {
+                    border: 1px solid var(--border-color);
+                    border-radius: 7px;
+                    padding: 11px;
+                    outline: none;
+                    width: 100%;
+                    background-color: var(--input-bg);
+                    color: var(--text-color);
+                }
+            }
+        }
+        .buttons {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            button {
+                height: 36px;
+                background-color: #FF7E32;
+                width: 322px;
+                border: 0;
+                border-radius: 8px;
+                color: white;
+                cursor: pointer;
+                font-size: 14px;
+            }
+            .icon {
+                cursor: pointer;
+                height: 36px;
+                width: 35px;
+                background-color: #E1E1E1;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

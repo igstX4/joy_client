@@ -1,0 +1,83 @@
+// Светлая тема (текущая)
+:root {
+    // Основные цвета
+    --primary-color: #050505;
+    --secondary-color: #A8A8A8;
+    --background-color: #FFFFFF;
+    --text-color: #050505;
+    --border-color: #E5E5E5;
+    
+    // Дополнительные цвета
+    --success-color: #4CAF50;
+    --error-color: #F44336;
+    --warning-color: #FFC107;
+    --info-color: #2196F3;
+    --accent-color: #F09004;
+    
+    // Цвета для элементов интерфейса
+    --button-bg: #050505;
+    --button-text: #FFFFFF;
+    --input-bg: #F5F5F5;
+    --input-border: #E5E5E5;
+    --input-text: #050505;
+    --input-placeholder: #A8A8A8;
+    
+    // Цвета для карточек и блоков
+    --card-bg: #FFFFFF;
+    --card-border: #E5E5E5;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --card-hover: #F5F5F5;
+
+    // Цвета для иконок
+    --icon-color: #050505;
+    --icon-color-secondary: #A8A8A8;
+}
+
+// Темная тема
+[data-theme="dark"] {
+    // Основные цвета
+    --primary-color: #FFFFFF;
+    --secondary-color: #A8A8A8;
+    --background-color: #1F1F1F;
+    --text-color: #FFFFFF;
+    --border-color: #333333;
+    
+    // Дополнительные цвета остаются теми же
+    --accent-color: #F09004;
+    
+    // Цвета для элементов интерфейса
+    --button-bg: #FFFFFF;
+    --button-text: #050505;
+    --input-bg: #2A2A2A;
+    --input-border: #333333;
+    --input-text: #FFFFFF;
+    --input-placeholder: #666666;
+    
+    // Цвета для карточек и блоков
+    --card-bg: #2A2A2A;
+    --card-border: #333333;
+    --card-shadow: rgba(0, 0, 0, 0.3);
+    --card-hover: #333333;
+
+    // Цвета для иконок
+    --icon-color: #FFFFFF;
+    --icon-color-secondary: #A8A8A8;
+}
+
+// Утилитарные классы для иконок
+.icon-theme {
+    svg path {
+        stroke: var(--icon-color);
+    }
+}
+
+.icon-theme-fill {
+    svg path {
+        fill: var(--icon-color);
+    }
+}
+
+// Плавные переходы при смене темы
+* {
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+} 
