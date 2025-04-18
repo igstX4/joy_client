@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const API_URL = 'https://dsfqq.ru/api/';
+export const API_URL = '/api';
 // export const SERVER_URL = 'https://checkplatform.ru';
 
 // const API_URL = 'http://localhost:4000/api';
