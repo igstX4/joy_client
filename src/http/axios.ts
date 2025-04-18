@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const API_URL = '/api';
+export const API_URL = 'https://dsfqq.ru/api/';
 // export const SERVER_URL = 'https://checkplatform.ru';
 
 // const API_URL = 'http://localhost:4000/api';
@@ -10,7 +10,7 @@ export const API_URL = '/api';
 // Инстанс для клиентских запросов
 export const clientApi = axios.create({
     baseURL: API_URL,
-    withCredentials: true,
+    // withCredentials: true,
     headers: {
         'Content-Type': 'application/json'
     }
